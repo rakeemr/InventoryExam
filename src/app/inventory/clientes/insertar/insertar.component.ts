@@ -71,7 +71,6 @@ export class InsertarComponent implements OnInit {
               res => {
                 if (res['status'] == 'success') {
                   this.cliente.nombre = this.solicitudActual.nombre;
-                  this.cliente.apellidos = this.solicitudActual.apellidos;
 
                   this.toasterManagerService.makeToast('success', 'Se ha modificado exitosamente!',
                     'Se ha modificado el cliente ' + this.solicitudActual.nombre +

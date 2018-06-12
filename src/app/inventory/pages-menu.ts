@@ -24,6 +24,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Facturación',
     icon: 'ion-card',
-    link: '/inventory/dashboard',
+    link: '/inventory/facturacion',
   },
 ];

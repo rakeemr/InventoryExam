@@ -1,5 +1,6 @@
 export class Producto {
     ID: string;
     nombre: string;
-    impuesto: number;
+    precio: string;
+    impuesto: string;
 }

@@ -9,7 +9,7 @@ export class InventarioService {
   constructor(private http: HttpClient) { }
 
 
-  api: string = "http://172.24.176.145:3000/"
+  api: string = "http://192.168.0.105:3000/";
 
   consultarInventario() {
     return this.http.get(this.api.concat('inventario'), { responseType: 'json' })

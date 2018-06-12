@@ -1,8 +1,8 @@
 export class Inventario {
     ID: string;
     producto: string;
-    cantidad: number;
-    cantidadMin: number;
-    cantidadMax: number;
+    cantidad: string;
+    cantidadMin: string;
+    cantidadMax: string;
     gravado: string;
 }

@@ -40,12 +40,14 @@
           <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Precio</th>
             <th>Impuesto</th>
           </tr>
 
           <tr *ngFor="let data of datosProductos | filtro:buscar:opcionSeleccionada | paginate: { itemsPerPage: 6, currentPage: p }">
             <td>{{data.ID}}</td>
             <td>{{data.nombre}}</td>
+            <td>{{data.precio}}</td>
             <td>{{data.impuesto}}</td>
             <td>
               <div class="btn-group">

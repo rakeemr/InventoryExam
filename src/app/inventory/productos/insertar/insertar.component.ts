@@ -70,6 +70,7 @@ export class InsertarComponent implements OnInit {
         res => {
           if (res['status'] === 'success') {
             this.producto.nombre = this.solicitudActual.nombre;
+            this.producto.precio = this.solicitudActual.precio;
             this.producto.impuesto = this.solicitudActual.impuesto;
             this.toasterManagerService.makeToast('success', 'Modificar', 'Producto modificado');
           }
